@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<html lang="en" dir="ltr">
+  <head>
+        <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <meta charset="utf-8">
+    <title>Home template</title>
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+      <script src="js/main.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link rel="stylesheet" href="/css/template.css">
+
+</head>
+  <body>
+    <header>
+      <div class="container">
+        <strong><nav>
+          <ul class="menu">
+              <img src="outline_menu_white_24dp.png" id ="opensidebar" class="hidden_nav" onclick="opennav()"></img>
+              <img src="outline_menu_white_24dp.png" id ="opensidebar" class="nav" onclick="closenav()"></img>
+              <a href="https://ernstabbegymnasium.de/">
+            <h1 class="logo" href="">Ernst-Abbe-Gymnasium</h1>
+              </a>
+          </ul>
+        </nav></strong>
+                <div id="side_bar"></div>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                          <div class="container-fluid">
+                            <img class="img_abbe_head" href="#" src="abbe_circle_shadow.png"></img>
+                            <button
+                              class="navbar-toggler"
+                              type="button"
+                              data-mdb-toggle="collapse"
+                              data-mdb-target="#navbarTogglerDemo02"
+                              aria-controls="navbarTogglerDemo02"
+                              aria-expanded="false"
+                              aria-label="Toggle navigation"
+                            >
+                              <i class="fas fa-bars"></i>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                  <a class="nav-link active" aria-current="page" href="homepage.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="Aufbau.html">Aufbau</a>
+                                </li>
+                                  <li class="nav-item">
+                                  <a class="nav-link" href="Design.html">Design</a>
+                                </li>
+                                  <li class="nav-item">
+                                  <a class="nav-link" href="Physik.html">Physik</a>
+                              </ul>
+                            </div>
+                          </div>
+                        </nav>
+      </div>
+
+    </header>
+    <i onclick="topFunction()" class="icon-arrow-down" href="#opensidebar" id="getup">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+</svg>
+    </i>
+
+
+        <img src="nawi.png.jpg" id="banner" style="max-width:100%;max-width:100%;height:auto;" top="-300px">
+        <div id="background-field1">
+        <div class="typewriter">
+              <h5>Naturwissenschaften</h5>
+        </div>
+        </div>
+
+            </img>
+        <div id="Ag">
+                <div class="card text-center" style="z-index: 10">
+                    <div class="card-body">
+                        <h5 class="card-title">Projekt Skischanze</h5>
+                        <p class="card-text">Wie baut man eigentlich eine professionelle Skischanze (z.B. als Projekt in der Schule)?</p>
+                        <a href="#link" class="btn btn-primary">Erfahre mehr</a>
+                    </div>
+                </div>
+   </div>
+        <div id="AbbeTV_card1">
+        <div class="card reveal ags" style="width: 300px; border-radius: 20px;">
+            <div class="card-body">
+                <h5 class="card-title">Aufbau</h5>
+                <p class="card-text">Der Aufbau einer Schanze</p>
+            </div>
+            <ul class="list-group list-group-flush">
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link btn btn-primary">mehr erfahren</a>
+            </div>
+        </div>
+        </div>
+
+        <div id="Schülerzeitung_card2">
+        <div class="card reveal ags" style="width: 300px; border-radius: 20px;">
+            <div class="card-body">
+                <h5 class="card-title" id="link">Design</h5>
+                <p class="card-text">Design Text</p>
+            </div>
+            <ul class="list-group list-group-flush">
+            </ul>
+            <div class="card-body">
+                <a href="{{ url_for('schülerzeitung') }}" class="card-link btn btn-primary">mehr erfahren</a>
+            </div>
+        </div>
+        </div>
+
+        <div id="HomepageAG_card3">
+        <div class="card reveal ags" style="width: 300px; border-radius: 20px;">
+            <div class="card-body">
+                <h5 class="card-title">Physik</h5>
+                <p class="card-text">DIe Physik hinter der Schanze</p>
+            </div>
+            <ul class="list-group list-group-flush">
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link btn btn-primary">mehr erfahren</a>
+            </div>
+        </div>
+ </body>
+</html>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<html lang="en" dir="ltr">
+  <head>
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <meta charset="utf-8">
+    <title>Home -- media_ernstabbe</title>
+  </head>
+  <body>
+

@@ -1,0 +1,272 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Montserrat:wght@900&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+{
+scroll-behavior: smooth;
+width:100% ;
+}
+html {
+  background: white;
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+strong{
+  background: #424242;
+  height: 40px;
+  width: 1920px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 15;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+strong h1{
+  position: absolute;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 10px;
+  top: 9px;
+    z-index: 50;
+  left: 810px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 1;
+}
+strong #opensidebar{
+  position: absolute;
+  top: 6px;
+  width: 30px;
+  height: 30px;
+}
+#banner{
+  position: absolute;
+  left: 0px;
+  width: 1920px;
+  height: 1080px;
+  top: -100px;
+    filter: blur("100");
+  z-index: 0;
+}
+#background-field1 {
+    position: absolute;
+    left: -25px;
+    z-index: 3;
+    top: 600px;
+    height: 1000px;
+    color: black;
+    width: 1931px;
+}
+
+#background-field2 {
+    position: absolute;
+    left: -25px;
+    z-index: 3;
+    top: 1500px;
+    height: 800px;
+    color: white;
+    width: 1931px;
+    box-shadow: 10px 0px 20px 0px rgb(0 0 0 / 50%);
+}
+
+#crop1{
+     height:720px;
+     width:1280px;
+     overflow:hidden
+
+}
+.container {
+    padding: 2px 16px;
+}
+.cropped {
+width: 383px;
+height: 180px;
+overflow: hidden;
+border: 5px solid black;
+}
+#Ag{
+    position: absolute;
+    top: 830px;
+    width: 1980px;
+    box-shadow: 10px 0px 20px 0px rgb(0 0 0 / 50%);
+}
+
+#AbbeTV_card1{
+    position: absolute;
+    top: 1100px;
+    left: 200px;
+}
+
+#Schülerzeitung_card2{
+    position: absolute;
+    top: 1100px;
+    left: 800px;
+}
+
+#HomepageAG_card3{
+    position: absolute;
+    top: 1100px;
+    left: 1400px;
+}
+
+#HomepageAG_card3_1{
+    position: absolute;
+    top: 1300px;
+    left: 3000px;
+}
+.AgsÜberschrift{
+    position: absolute;
+    z-index: 4;
+    color: black;
+    left: 180px;
+    top: 40px;
+    font-size: 40px;
+    font-weight: lighter;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.ags{
+    box-shadow: 10px 0px 20px 0px rgb(0 0 0 / 50%)
+}
+
+.ags:hover{
+    box-shadow: 10px 0px 20px 0px rgb(0 0 0 / 80%);
+}
+.typewriter {
+    left: 650px;
+    position: absolute;
+    top: -205px;
+}
+.typewriter h5 {
+    font-size: 90px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    font-family: "Alliance No.1",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-feature-settings: "ss02" on,"ss01" on;
+    font-weight: 600 !important;
+    letter-spacing: -0.01em !important;
+
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0px }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #bcf1eb; }
+}
+
+
+.navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 1920px;
+    -ms-flex-align: center;
+    left: -409px;
+    top: 0px;
+    z-index:2;
+    height: 0px;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    transition-duration: 1s;
+}
+.hidden_nav{
+    transition-duration: 2s;
+}
+.nav{
+    display: none;
+    transform: rotate(90deg);
+    transition-duration: 10s;
+}
+.img_abbe_head {
+    width: 22px;
+    height: 25px;
+    position: absolute;
+    left: 6px;
+    top: 11px;
+    transform: rotate(
+180deg
+);
+    transform: scaleX(-1);
+}
+
+#getup{
+    z-index: 100000;
+    position: fixed;
+    top: 910px;
+    width: 50px;
+    height: 50px;
+    left: 1875px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.menurespond {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.menurespond a {
+  background-color: #e5e5e5;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
+
+.right {
+  background-color: #e5e5e5;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menurespond, .main, .right {
+    width: 100%;
+  }
+}
